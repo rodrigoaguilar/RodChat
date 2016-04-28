@@ -12,6 +12,7 @@
 		DCAF7DCA1CD27FF100FB15E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF7DC81CD27FF100FB15E9 /* Main.storyboard */; };
 		DCAF7DCC1CD27FF100FB15E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAF7DCB1CD27FF100FB15E9 /* Assets.xcassets */; };
 		DCAF7DCF1CD27FF100FB15E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF7DCD1CD27FF100FB15E9 /* LaunchScreen.storyboard */; };
+		DCAF7DDD1CD2880F00FB15E9 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF7DDC1CD2880F00FB15E9 /* MessagesController.swift */; };
 		FACB9D8C14723935869B3FD5 /* Pods_RodChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13106DEAF4D1CCFBC6E5A4EA /* Pods_RodChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		DCAF7DCB1CD27FF100FB15E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCAF7DCE1CD27FF100FB15E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAF7DD01CD27FF100FB15E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAF7DDC1CD2880F00FB15E9 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		DEAA607D37545998FDBA65A9 /* Pods-RodChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RodChat/Pods-RodChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				DCAF7DCB1CD27FF100FB15E9 /* Assets.xcassets */,
 				DCAF7DCD1CD27FF100FB15E9 /* LaunchScreen.storyboard */,
 				DCAF7DD01CD27FF100FB15E9 /* Info.plist */,
+				DCAF7DDC1CD2880F00FB15E9 /* MessagesController.swift */,
 			);
 			path = RodChat;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				DCAF7DC71CD27FF100FB15E9 /* ViewController.swift in Sources */,
 				DCAF7DC51CD27FF100FB15E9 /* AppDelegate.swift in Sources */,
+				DCAF7DDD1CD2880F00FB15E9 /* MessagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

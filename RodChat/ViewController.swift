@@ -14,19 +14,6 @@ class ViewController: UIViewController {
     
     var token: dispatch_once_t = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        let testObject = PFObject(className: "TestObject")
-//        testObject["foo"] = "bar"
-//        testObject.saveInBackgroundWithBlock { success, error in
-//            if (success) {
-//                print("Its working!")
-//            } else {
-//                print("Does not work: \(error?.localizedDescription)")
-//            }
-//        }
-    }
-    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         dispatch_once(&token) { self.loginOrLoadBooks() }
@@ -53,7 +40,8 @@ class ViewController: UIViewController {
     }
     
     func loadMessages() {
-        
+        let messagesController = MessagesController()
+        navigationController?.pushViewController(messagesController, animated: true)
     }
 }
 
