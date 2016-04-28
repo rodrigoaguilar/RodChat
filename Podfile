@@ -7,5 +7,6 @@ target 'RodChat' do
 pod 'JSQMessagesViewController'
 pod 'Parse'
 pod 'ParseUI'
+pod 'ParseLiveQuery'
 end
 

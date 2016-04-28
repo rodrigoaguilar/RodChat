@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57F2BE0179B453E2EED0E529 /* Pods_RodChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DF86D0116FD8759EE864E2 /* Pods_RodChat.framework */; };
 		DCAF7DC51CD27FF100FB15E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF7DC41CD27FF100FB15E9 /* AppDelegate.swift */; };
 		DCAF7DC71CD27FF100FB15E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF7DC61CD27FF100FB15E9 /* ViewController.swift */; };
 		DCAF7DCA1CD27FF100FB15E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF7DC81CD27FF100FB15E9 /* Main.storyboard */; };
@@ -14,12 +15,12 @@
 		DCAF7DCF1CD27FF100FB15E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAF7DCD1CD27FF100FB15E9 /* LaunchScreen.storyboard */; };
 		DCAF7DDD1CD2880F00FB15E9 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF7DDC1CD2880F00FB15E9 /* MessagesController.swift */; };
 		DCAF7DDF1CD290D800FB15E9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF7DDE1CD290D800FB15E9 /* Message.swift */; };
-		FACB9D8C14723935869B3FD5 /* Pods_RodChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13106DEAF4D1CCFBC6E5A4EA /* Pods_RodChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13106DEAF4D1CCFBC6E5A4EA /* Pods_RodChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RodChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D7D3E973BABE186144AD72 /* Pods-RodChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RodChat/Pods-RodChat.debug.xcconfig"; sourceTree = "<group>"; };
+		07DF86D0116FD8759EE864E2 /* Pods_RodChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RodChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A62E0A1D40B142AE6BA56F0 /* Pods-RodChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RodChat/Pods-RodChat.release.xcconfig"; sourceTree = "<group>"; };
+		7DB26CDE5771E36206B126FD /* Pods-RodChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RodChat/Pods-RodChat.debug.xcconfig"; sourceTree = "<group>"; };
 		DCAF7DC11CD27FF100FB15E9 /* RodChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RodChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAF7DC41CD27FF100FB15E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAF7DC61CD27FF100FB15E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		DCAF7DD01CD27FF100FB15E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCAF7DDC1CD2880F00FB15E9 /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		DCAF7DDE1CD290D800FB15E9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		DEAA607D37545998FDBA65A9 /* Pods-RodChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RodChat/Pods-RodChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,26 +37,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACB9D8C14723935869B3FD5 /* Pods_RodChat.framework in Frameworks */,
+				57F2BE0179B453E2EED0E529 /* Pods_RodChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16B89D248D9797A06ED5692E /* Frameworks */ = {
+		470F1A618612C39AC4C08DDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13106DEAF4D1CCFBC6E5A4EA /* Pods_RodChat.framework */,
+				07DF86D0116FD8759EE864E2 /* Pods_RodChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B4CEAF72470C27720B9FD8E8 /* Pods */ = {
+		730B2B57E3FA3280BD794799 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4D7D3E973BABE186144AD72 /* Pods-RodChat.debug.xcconfig */,
-				DEAA607D37545998FDBA65A9 /* Pods-RodChat.release.xcconfig */,
+				7DB26CDE5771E36206B126FD /* Pods-RodChat.debug.xcconfig */,
+				5A62E0A1D40B142AE6BA56F0 /* Pods-RodChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -66,8 +66,8 @@
 			children = (
 				DCAF7DC31CD27FF100FB15E9 /* RodChat */,
 				DCAF7DC21CD27FF100FB15E9 /* Products */,
-				B4CEAF72470C27720B9FD8E8 /* Pods */,
-				16B89D248D9797A06ED5692E /* Frameworks */,
+				730B2B57E3FA3280BD794799 /* Pods */,
+				470F1A618612C39AC4C08DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAF7DD31CD27FF100FB15E9 /* Build configuration list for PBXNativeTarget "RodChat" */;
 			buildPhases = (
-				3E7C6307950628FCCBC85123 /* Check Pods Manifest.lock */,
+				E951A431492C7F4D5FDB738D /* 📦 Check Pods Manifest.lock */,
 				DCAF7DBD1CD27FF100FB15E9 /* Sources */,
 				DCAF7DBE1CD27FF100FB15E9 /* Frameworks */,
 				DCAF7DBF1CD27FF100FB15E9 /* Resources */,
-				AEB60D5F85A7F0E7621E4F07 /* Embed Pods Frameworks */,
-				DAF7D89CBDB4132E5B172E74 /* Copy Pods Resources */,
+				D1DB40BF911D2B8C0B12AFD1 /* 📦 Embed Pods Frameworks */,
+				16387B4EF8436E367E4C57D9 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,29 +165,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E7C6307950628FCCBC85123 /* Check Pods Manifest.lock */ = {
+		16387B4EF8436E367E4C57D9 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RodChat/Pods-RodChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEB60D5F85A7F0E7621E4F07 /* Embed Pods Frameworks */ = {
+		D1DB40BF911D2B8C0B12AFD1 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,19 +195,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RodChat/Pods-RodChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DAF7D89CBDB4132E5B172E74 /* Copy Pods Resources */ = {
+		E951A431492C7F4D5FDB738D /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RodChat/Pods-RodChat-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -333,7 +333,7 @@
 		};
 		DCAF7DD41CD27FF100FB15E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D7D3E973BABE186144AD72 /* Pods-RodChat.debug.xcconfig */;
+			baseConfigurationReference = 7DB26CDE5771E36206B126FD /* Pods-RodChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -348,7 +348,7 @@
 		};
 		DCAF7DD51CD27FF100FB15E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEAA607D37545998FDBA65A9 /* Pods-RodChat.release.xcconfig */;
+			baseConfigurationReference = 5A62E0A1D40B142AE6BA56F0 /* Pods-RodChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -9,12 +9,14 @@
 import UIKit
 import JSQMessagesViewController
 import Parse
+import ParseLiveQuery
 
 class MessagesController: JSQMessagesViewController {
     
     var messages = [JSQMessage]()
     var outgoingBubbleImageView: JSQMessagesBubbleImage!
     var incomingBubbleImageView: JSQMessagesBubbleImage!
+    var subscription: Subscription<Message>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class MessagesController: JSQMessagesViewController {
         senderId = user.objectId!
         senderDisplayName = user.email!
         loadMessages()
+        subscribe()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Refresh, target: self, action: #selector(MessagesController.loadMessages))
     }
     
@@ -38,9 +41,38 @@ class MessagesController: JSQMessagesViewController {
             UIColor.jsq_messageBubbleLightGrayColor())
     }
     
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    func subscribe() {
+        print("Subscribe: \(senderId)")
+        let query = Message.query()!
+        query.whereKey("senderId", notEqualTo: senderId)
+        subscription = query.subscribe()
+        subscription?.handle(Event.Created) { _, message in
+            print("Received: \(message)")
+            self.delay(0) {
+                self.showTypingIndicator = !self.showTypingIndicator
+            }
+            
+            self.delay(2) {
+                self.scrollToBottomAnimated(true)
+                JSQSystemSoundPlayer.jsq_playMessageReceivedSound()
+                self.messages.append(message.jsqMessage())
+                self.finishReceivingMessageAnimated(true)
+            }
+        }
+    }
+    
     func loadMessages() {
-        let query = PFQuery(className: Message.parseClassName())
-        query.findObjectsInBackgroundWithBlock { objects, error in
+        let query = Message.query()
+        query?.findObjectsInBackgroundWithBlock { objects, error in
             if error == nil {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) message.")
