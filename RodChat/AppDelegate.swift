@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        Message.registerSubclass()
         let configuration = ParseClientConfiguration {
             $0.applicationId = "myAppId"
             $0.localDatastoreEnabled = true
