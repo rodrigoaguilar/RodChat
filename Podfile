@@ -6,5 +6,6 @@ use_frameworks!
 target 'RodChat' do
 pod 'JSQMessagesViewController'
 pod 'Parse'
+pod 'ParseUI'
 end
 
