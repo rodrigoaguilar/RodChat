@@ -1,0 +1,6 @@
+framework module Pods_RodChat {
+  umbrella header "Pods-RodChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
