@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Message.registerSubclass()
         let configuration = ParseClientConfiguration {
             $0.applicationId = "myAppId"
-            $0.localDatastoreEnabled = true
-            $0.server = "http://107.170.63.28:1337/parse"
+            $0.server = "http://your-parse-server-ip/parse"
         }
         
         Parse.initializeWithConfiguration(configuration)
