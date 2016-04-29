@@ -23,7 +23,7 @@ class MessagesController: JSQMessagesViewController {
         // No avatars
         collectionView!.collectionViewLayout.incomingAvatarViewSize = CGSizeZero
         collectionView!.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero
-        title = "Prep Chat"
+        title = "Rod Chat"
         setupBubbles()
         let user = PFUser.currentUser()!
         senderId = user.objectId!
@@ -121,6 +121,24 @@ class MessagesController: JSQMessagesViewController {
     override func collectionView(collectionView: JSQMessagesCollectionView!,
                                  avatarImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageAvatarImageDataSource! {
         return nil
+    }
+    
+    override func collectionView(collectionView: UICollectionView,
+                                 cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAtIndexPath: indexPath)
+            as! JSQMessagesCollectionViewCell
+        
+        let message = messages[indexPath.item]
+        
+        if cell.textView != nil {
+            if message.senderId == senderId {
+                cell.textView!.textColor = UIColor.whiteColor()
+            } else {
+                cell.textView!.textColor = UIColor.blackColor()
+            }
+        }
+        
+        return cell
     }
 
 }
